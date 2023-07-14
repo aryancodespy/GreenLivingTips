@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* GLOBAL VARIABLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #F5F5DC;
+    --green: rgba(33, 140, 33, 0.7);
+}
+
+/* BODY */
+body {
+    background: url(https://www.mapleridgenews.com/wp-content/uploads/2020/04/21333414_web1_200420-CRM-earth-day-EARTHDAY_1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+/* HEADER */
+header {
+    background-color: var(--green);
+    padding: 20px 9%;
+    text-align: center;  
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+/* MAIN */
+main {
+    min-height: 100vh;
+    padding: 10rem 10% 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* MAIN CONTENT */
+.tip {
+    background-color: var(--green);
+    padding: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.tip-heading {
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.text {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+.btn {
+    padding: 15px;
+    width: 100px;
+    background-color: var(--green);
+    border: 0;
+    border-radius: 4rem;
+    color: var(--white);
+    transition: 0.5s ease;
+    font-weight: 600;
+
+}
+
+.btn:hover {
+    background: #7CFC00;
+    color: var(--green);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--green);
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 780px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 5px 5%;
+    }
+
+    .tip {
+        padding: 20px;
+    }
+    
+}
